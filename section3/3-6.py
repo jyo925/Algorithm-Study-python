@@ -8,7 +8,7 @@ data = [list(map(int, input().split())) for _ in range(n)]
 # # 행의 합
 # row_sum = [sum(i) for i in data]
 #
-# # 열의 합은 ? 0열 ->
+# # 열의 합은 ? i:열, j:행
 # col_sum = 0
 # for i in range(n):
 #     tmp = 0
@@ -27,6 +27,7 @@ data = [list(map(int, input().split())) for _ in range(n)]
 # row_sum.append(d2)
 #
 # print(max(row_sum))
+
 start_time = datetime.datetime.now()
 
 largest = -2147000000
@@ -36,12 +37,13 @@ for i in range(n):
     for j in range(n):
         row_sum += data[i][j]
         col_sum += data[j][i]
+
     if row_sum > largest:
         largest = row_sum
     if col_sum > largest:
         largest = col_sum
 
-# # 대각선 합 구하기
+# 대각선 합 구하기
 d1 = d2 = 0
 for i in range(n):
     d1 += data[i][i]
