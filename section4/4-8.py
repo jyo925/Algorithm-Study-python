@@ -1,26 +1,27 @@
 import sys
+from collections import deque
 
 # 타이나틱
-# sys.stdin = open("input.txt", 'r')
+# 리스트는 pop(0) 맨 앞 요소를 삭제하면 모든 요소가 앞으로 한칸씩 이동해야 한다.
+# 덱을 사용해볼 것 popleft()
+sys.stdin = open("input.txt", 'r')
 
-n, m = map(int, input().split())
+n, limit = map(int, input().split())
 w = list(map(int, input().split()))
-
 w.sort()
-
+w = deque(w)
 cnt = 0
 
-while len(w) != 0:
-
-    for i in w[:-1]:
-        if w[-1] + i <= m:
-            cnt += 1
-            w.remove(w[-1])
-            w.remove(i)
-            break
-    else:
+while w:
+    if len(w) == 1:
         cnt += 1
-        w.remove(w[-1])
-
+        break
+    if w[0] + w[-1] > limit:
+        w.pop()
+        cnt += 1
+    else:
+        w.popleft()
+        w.pop()
+        cnt += 1
 
 print(cnt)
