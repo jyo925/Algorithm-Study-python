@@ -10,6 +10,7 @@ m = int(input())
 # rotation 행h 방향t 개수k
 for i in range(m):
     h, t, k = map(int, input().split())
+    # 0은 왼쪽, 1은 오른쪽 회전
     if t == 0:
         for _ in range(k):
             # 왼쪽으로 회전하는 경우 맨 앞에 요소를 지우고 그 값을 마지막에 추가

@@ -7,7 +7,7 @@ sys.stdin = open("input.txt", 'r')
 board = [list(map(int, input().split())) for _ in range(7)]
 cnt = 0
 
-
+# 회문 체크
 def check(a):
     for s in range(len(a) // 2):
         if a.pop() != a.pop(0):

@@ -16,11 +16,15 @@ def check(a):
         if sum(ch_row) != 9 or sum(ch_col) != 9:
             return False
     # 그룹 검사
-    for i in range(3):
-        for j in range(3):
+    for i in range(3): # 0 1 2
+        for j in range(3): # 0 1 2
             ch_box = [0] * 10
-            for k in range(3):
-                for s in range(3):
+            for k in range(3): # 0 1 2
+                for s in range(3): # 0 1 2
+                    # i 와 j에 따라서 9개 그룹 계산
+                    # 0행 0열, 0행 3열, 0행 6열
+                    # 3행 0열, 3행 3열, 3행 6열
+                    # 6행 0열, 6행 3열, 6행 6열
                     ch_box[a[i * 3 + k][j * 3 + s]] = 1
             if sum(ch_box) != 9:
                 return False

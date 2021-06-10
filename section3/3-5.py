@@ -37,7 +37,7 @@ while True:
         cnt += 1
         tot -= a[lt]
         lt += 1
-    else: # tot > m
+    else:  # tot > m
         tot -= a[lt]
         lt += 1
 

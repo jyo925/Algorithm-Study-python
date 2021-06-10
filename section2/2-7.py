@@ -1,6 +1,9 @@
 import sys
 
 # 소수 개수 출력
+# 에라토스테네스 체
+# 2부터 시작, 2와 2의 배수 모두 1로 체크
+# 0일 때만 +1
 sys.stdin = open("input.txt", "rt")
 n = int(input())
 

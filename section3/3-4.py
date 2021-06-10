@@ -11,7 +11,7 @@ list2 = list(map(int, input().split()))
 # merge_list = list1+list2
 # merge_list.sort()
 
-# 이미 정렬되어있는 데이터를 nlogn인 sort를 이용하는 것은 비추
+# 이미 정렬되어있는 데이터를 nlogn인 sort를 이용하는 것은 비추천
 # 0(n)으로 되게끔 구현하기
 
 p1 = p2 = 0
