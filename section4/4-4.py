@@ -7,7 +7,7 @@ sys.stdin = open("input.txt", 'r')
 
 def count(distance):
     cnt = 1
-    ep = x[0]
+    ep = x[0] #마지막으로 말이 배치된 지점
 
     for i in range(1, n):
         if x[i] - ep >= distance:
@@ -28,7 +28,7 @@ while lt <= rt:
     mid = (lt + rt) // 2
     if count(mid) >= m:
         res = mid
-        lt = mid + 1
+        lt = mid + 1 #더 큰거리를 찾도록
     else:
         rt = mid - 1
 

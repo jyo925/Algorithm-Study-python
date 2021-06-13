@@ -22,7 +22,7 @@ while lt <= rt:
     if a[rt] > last:
         tmp.append((a[rt], 'R'))
     tmp.sort()
-    # lt, rt 모두 last 보다 작은 경우
+    # lt, rt 모두 last 보다 작은 경우 (종료조건)
     if len(tmp) == 0:
         break
     else:

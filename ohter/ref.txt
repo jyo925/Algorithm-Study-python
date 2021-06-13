@@ -1,3 +1,4 @@
-1. 파이썬 자료형 별 주요 연산자의 시간 복잡도 (Big-O)
-https://wayhome25.github.io/python/2017/06/14/time-complexity/
+파이썬 자료형 별 주요 연산자의 시간 복잡도 (Big-O)
+https://daimhada.tistory.com/56
+
 

@@ -21,13 +21,14 @@ def count(capacity):
 n, m = map(int, input().split())
 music = list(map(int, input().split()))
 
-
+# lt, rt 는 DVD 용량 크기 범위
 lt = 1
 rt = sum(music)
 max_music = max(music)
 res = 0
 while lt <= rt:
     mid = (lt + rt) // 2
+    # DVD 용량은 최소한 노래 리스트 중에서 가장 긴 노래를 담을 수 있어야 함
     if mid >= max_music and count(mid) <= m:
         res = mid
         rt = mid - 1
