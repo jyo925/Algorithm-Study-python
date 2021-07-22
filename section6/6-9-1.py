@@ -2,7 +2,7 @@ import sys
 import datetime
 start_time = datetime.datetime.now()
 # 수열 추측하기
-# 시간 단축 어떻게..? -> 파스칼 삼각형 구할 때 연산 규칙 파악
+# 핵심 시간 단축 -> 파스칼 삼각형 구할 때 연산 규칙 파악 이항계수
 # 복습하기
 sys.stdin = open("input.txt", 'r')
 

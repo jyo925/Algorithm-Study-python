@@ -11,8 +11,8 @@ def DFS(x):
     if x > 7:
         return
     else:
-        print(x, end=' ')
         DFS(x * 2)  # 왼쪽 자식 호출
+        print(x, end=' ')
         DFS(x * 2 + 1)  # 오른쪽 자식 호출
 
 

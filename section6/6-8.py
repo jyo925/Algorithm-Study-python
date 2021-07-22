@@ -1,6 +1,7 @@
 import sys
 
 # 순열 구하기
+# 중복순열과 비슷, 중복을 하지 않도록 체크리스트를 활용할 것
 # sys.stdin = open("input.txt", 'r')
 
 

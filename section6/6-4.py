@@ -46,6 +46,7 @@ def DFS(L, s):  # L은 인덱스, s는 sum
     if s > total // 2:
         return
     if L == n:
+        #내가 만든 집합의 합 s와 나머지 부분집합 합이 같은지 체크
         if s == (total - s):
             print("YES")
             sys.exit(0)

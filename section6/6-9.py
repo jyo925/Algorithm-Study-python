@@ -8,7 +8,6 @@ sys.stdin = open("input.txt", 'r')
 
 
 def check(x):
-    # print(x, end=' ')
     y = []
     while True:
         if len(x) == 1:
@@ -17,7 +16,6 @@ def check(x):
             y.append(x[i] + x[i + 1])
         x = y
         y = []
-
     return x[0]
 
 
@@ -25,11 +23,9 @@ def DFS(L):
     if L == n:
         # for j in range(n):
         #     print(ch[j], end=' ')
-
         # 이때 ch 리스트에 있는 요소로 계산해야 함
         # 반환되는 계산 값이 m과 같은 경우 ch 출력 및 DFS 시스템 종료
         x = ch[:-1]
-        # print(check(x), end=' ')
         if check(x) == m:
             for j in range(n):
                 print(ch[j], end=' ')
