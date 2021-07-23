@@ -1,7 +1,5 @@
 import sys
-import datetime
 
-start_time = datetime.datetime.now()
 # 수들의 조합
 # 조합의 합이 M의 배수인게 몇 개인가?
 sys.stdin = open("input.txt", 'r')

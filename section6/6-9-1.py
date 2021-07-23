@@ -27,6 +27,7 @@ if __name__ == "__main__":
     p = [0] * n
     b = [1] * n
     ch = [0] * (n + 1)
+    # 이항계수 계산
     for i in range(1, n):
         b[i] = b[i - 1] * (n - i) // i
     DFS(0, 0)

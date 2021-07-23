@@ -1,10 +1,9 @@
 import sys
-import datetime
 
-start_time = datetime.datetime.now()
 # 수들의 조합
 # 조합의 합이 M의 배수인게 몇 개인가?
 # 내 풀이
+# for문 내는 아니지만 sum() 시간복잡도는 o(n)임
 sys.stdin = open("input.txt", 'r')
 
 
