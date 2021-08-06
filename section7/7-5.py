@@ -1,6 +1,7 @@
 import sys
 
 # 동전 분배하기(DFS)
+# 3명에게 총 합이 다르게 동전을 어떻게 분배할지?
 
 sys.stdin = open("input.txt", 'r')
 
@@ -14,7 +15,6 @@ def DFS(L):
         cha = max(tmp) - min(tmp)
         if len(tmp) == 3 and cha < res:
             res = cha
-
         return
     else:
         # 3명
