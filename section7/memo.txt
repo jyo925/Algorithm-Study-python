@@ -6,3 +6,9 @@ BFS
 - 레벨 탐색
 - 큐 이용
 - 최단거리 구하기
+
+재귀 사용할 때 넣어주기
+sys.stdin = open("input.txt", "r")
+
+Process finished with exit code
+-> input 데이터를 작게 조절하면 정상작동하는걸 봐서는 메모리 문제인거같은데 해결 못함
