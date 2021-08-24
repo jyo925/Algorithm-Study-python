@@ -3,7 +3,7 @@ from collections import deque
 
 # 토마토(BFS 활용)
 # 내 풀이 -> 매우 비효율적 주먹구구식
-# sys.stdin = open("input.txt", "r")
+sys.stdin = open("input.txt", "r")
 dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 sys.setrecursionlimit(10 ** 6)
@@ -11,6 +11,7 @@ sys.setrecursionlimit(10 ** 6)
 m, n = map(int, input().split())
 res = 0
 board = [list(map(int, input().split())) for _ in range(n)]
+# print(board)
 Q = deque()
 
 for i in range(n):
