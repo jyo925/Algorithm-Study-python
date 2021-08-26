@@ -18,5 +18,5 @@ def pibo(x):
     return d[x]
 
 
-print(fibo(11))
-print(fibo(150))
+print(pibo(11))
+print(pibo(150))
