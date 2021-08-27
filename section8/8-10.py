@@ -2,7 +2,7 @@ import sys
 
 # 동전교환 (냅색 알고리즘)
 
-# sys.stdin = open("input.txt", 'r')
+sys.stdin = open("input.txt", 'r')
 
 if __name__ == "__main__":
     n = int(input())
@@ -17,4 +17,5 @@ if __name__ == "__main__":
         for j in range(i, m + 1):
             dy[j] = min(dy[j], dy[j - i] + 1)
 
+    print(dy)
     print(dy[m])
