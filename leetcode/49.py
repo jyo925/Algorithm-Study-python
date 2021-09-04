@@ -1,5 +1,5 @@
 import collections
-import re
+
 
 class Solution:
     def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
@@ -10,4 +10,5 @@ class Solution:
 
         return anagrams.values()
 
-print(Solution.groupAnagrams("", ["eat","tea","tan","ate","nat","bat"]))
+
+print(Solution.groupAnagrams("", ["eat", "tea", "tan", "ate", "nat", "bat"]))
