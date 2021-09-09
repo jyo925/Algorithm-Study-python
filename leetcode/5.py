@@ -1,5 +1,6 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+
         def expand(left: int, right: int) -> str:
             while left >= 0 and right <= len(s) and s[left] == s[right - 1]:
                 left -= 1
